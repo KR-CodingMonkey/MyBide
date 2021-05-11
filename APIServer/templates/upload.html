@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/upload.css">
+    <title>MY APP</title>
+    <script>
+        function add_item(){
+             // pre_set 에 있는 내용을 읽어와서 처리..
+             var div = document.createElement('div');
+             div.innerHTML = document.getElementById('key_value').innerHTML;
+             document.getElementById('field').appendChild(div);
+        }
+        function remove_item(obj){
+             // obj.parentNode 를 이용하여 삭제
+             document.getElementById('field').removeChild(obj.parentNode);
+        }
+    </script>
+</head>
+<body>
+
+<form action="http://localhost:5000/upload/complete" enctype="multipart/form-data" method="POST">
+    <input type="text" name="Email"/><br>
+    <input type="file" name="pic"/>
+    <div class = "keys">
+        <div id = "key_value">
+            <input type="text" name="key"/><br>
+            <input type="text" name="value"/>
+            <input type="button" value="삭제" onclick="remove_item(this)">
+        </div>
+    </div>
+    
+    <div id="field"></div>
+    <input type="button" value=" 추가 " onclick="add_item()"><br>
+    <input type="submit" value="Upload a file"/>
+</form>
+ 
+</body>
+</html>
