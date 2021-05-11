@@ -4,10 +4,8 @@ from selenium.webdriver import Chrome, Firefox
 from functions import scrape_data
 import os
 
-# EXAMPLE:
-#hashtags = ["travel", "food", "animals", "selfie", "cars", "fitness", "babies", "wedding", "nature", "architecture"]
-
 # Your own hashtags here:
+#hashtags = ["travel", "food", "animals", "selfie", "cars", "fitness", "babies", "wedding", "nature", "architecture"]
 hashtags = ["hair"]
 
 # How many hashtags to scrape:
