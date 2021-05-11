@@ -8,7 +8,7 @@
 
     -> 후보 #해시태그 리스트 생성 (빈도 수)
 
-3. 사용자가 #해시태그 리스트중 선택 후 업로드
+3. 사용자가 #해시태그 리스트 중 선택 후 업로드
 
  
 
@@ -20,3 +20,8 @@ https://algorima.tistory.com/4
 https://towardsdatascience.com/using-ai-to-automatically-add-hashtags-to-images-d37ff2a42f35
 
 https://www.koreascience.or.kr/article/JAKO202024063317094.pdf
+
+
+## firefox - geckodriver 설치
+
+https://github.com/mozilla/geckodriver/releases
