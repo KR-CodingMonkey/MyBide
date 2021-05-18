@@ -9,7 +9,7 @@ import dlib
 import cv2
 
 FACIAL_LANDMARKS_68_IDXS = OrderedDict([
-	("mouth", (48, 68)),
+	("mouth", (48, 68) ),
 	("inner_mouth", (60, 68)),
 	("right_eyebrow", (17, 22)),
 	("left_eyebrow", (22, 27)),

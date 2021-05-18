@@ -31,28 +31,14 @@ def My_Visualize_Facial_Landmarks(image, shape, colors=None, alpha=0.75):
 	# color for each facial landmark region
 	if colors is None:
 		colors = [(0, 0, 0), (0, 0, 0),(0, 0, 0),(0, 0, 0),(0, 0, 0),(0, 0, 0),(0, 0, 0),(0, 0, 0),]
-	
-	## loop over the facial landmark regions individually
-	#for (i, name) in enumerate(FACIAL_LANDMARKS_IDXS.keys()):
-	#	# grab the (x, y)-coordinates associated with the
-	#	# face landmark
-	#	(j, k) = FACIAL_LANDMARKS_IDXS[name]
-	#	pts = shape[j:k]
 
-	#	# since the jawline is a non-enclosed facial region,
-	#	# just draw lines between the (x, y)-coordinates
-	#	# otherwise, compute the convex hull of the facial
-	#	# landmark coordinates points and display it
-	#	hull = cv2.convexHull(pts)
-	#	cv2.drawContours(overlay, [hull], -1, colors[i], -1)
+	startX, startY = shape[17]
+	#startX = startX + 30
+	endX, endY = shape[12]
 
-	#pts = shape[1:66]
-	pts = shape[18:66]
-	hull = cv2.convexHull(pts)
-	cv2.drawContours(overlay, [hull], -1, colors[i], -1)
-
-	# apply the transparent overlay
-	cv2.addWeighted(overlay, alpha, output, 1 - alpha, 0, output)
+	face = output[startY:endY, startX:endX]
+	blur = cv2.GaussianBlur(face,(99,99), 30)
+	output[startY:endY, startX:endX] = blur
 
 	# return the output image
 	return output
@@ -70,7 +56,7 @@ predictor = dlib.shape_predictor("./shape_predictor_68_face_landmarks.dat")
 #predictor = dlib.shape_predictor(args["shape_predictor"])
 
 # load the input image, resize it, and convert it to grayscale
-image = cv2.imread("./test11.png")
+image = cv2.imread("./test3.png")
 #image = cv2.imread(args["image"])
 image = imutils.resize(image, width=500)
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
