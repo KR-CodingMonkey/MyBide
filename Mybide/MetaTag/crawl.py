@@ -6,7 +6,7 @@ import os
 
 # Your own hashtags here:
 #hashtags = ["travel", "food", "animals", "selfie", "cars", "fitness", "babies", "wedding", "nature", "architecture"]
-hashtags = ["hair"]
+hashtags = ["dlwlrma"]
 
 # How many hashtags to scrape:
 num_to_scrape = 100
