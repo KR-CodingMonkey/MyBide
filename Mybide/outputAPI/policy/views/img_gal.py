@@ -9,7 +9,7 @@ sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
 
 ## 지혜 코드
 from level1 import main1
-
+# helloo everyone
 bp = Blueprint('img_gallary', __name__, url_prefix='/image')
 
 
