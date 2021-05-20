@@ -1,0 +1,4 @@
+﻿_id,id,image
+60a1fe3c54a85d650537b045,wlgp9226,"[{'image_path': 'test1.png', 'created_at': datetime.datetime(2021, 5, 17, 5, 25, 16, 678000), 'tag': ['korean', '커트', '허쉬컷', '서울시 관악구']}, {'image_path': 'test11.png', 'created_at': datetime.datetime(2021, 5, 17, 5, 25, 16, 678000), 'tag': ['korean', 'woman', '서울시 강남구']}]"
+60a1fe3c54a85d650537b046,dltkdguq,"[{'image_path': 'test2.png', 'created_at': datetime.datetime(2021, 5, 17, 5, 25, 16, 770000), 'tag': ['korean', '50kg', '용인시 기흥구']}, {'image_path': 'test22.png', 'created_at': datetime.datetime(2021, 5, 17, 5, 25, 16, 770000), 'tag': ['경주', '01012345678', '커트', '댄디컷']}]"
+60a1fe3e54a85d650537b047,김태현,"[{'image_path': 'test3.png', 'created_at': datetime.datetime(2021, 5, 17, 5, 25, 18, 422000), 'tag': ['25살', '강남', '골드브라운', '염색']}, {'image_path': 'test33.png', 'created_at': datetime.datetime(2021, 5, 17, 5, 25, 18, 422000), 'tag': ['5월11일', '남산타워', '염색', 'black']}]"
